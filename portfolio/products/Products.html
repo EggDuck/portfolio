@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Products</title>
+        <link href="../PORTFOLIO.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/jpg" href="../album/horses_gray.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    </head>
+    <body>
+        <article>
+            <header>
+                <nav role="navigation" class="nav">
+                    <ul class="nav-items">
+                        <li class="nav-item">
+                            <a href="../PORTFOLIO.html" class="nav-link"><span>Home</span></a>
+                        </li> 
+                        <li class="nav-item">
+                            <a href="../about/About.html" class="nav-link"><span>About</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Products.html" class="nav-link"><span>Products</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../ctf/CTF.html" class="nav-link"><span>CTF</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1 class="mainTitle">Products</h1>
+                <div class="underTitle">
+                    vsCTF&nbsp;(&nbsp;2023年9月下旬&nbsp;)&nbsp;の後に、開発分野を学び始めました。<br>
+                    いつか自信をもって世に出せるアプリケーションを作りたいです。
+                </div>
+                <h2 class="subTitle">1. 介護支援Webアプリケーション</h2>
+                <div class="underTitle">
+                    <h3>アプリの概要</h3>
+                    介護分野における外国人労働者の困難を少しでも取り除くことを目指したアプリです。ローカル環境で作成済み。アプリの使用方法は、<a href="how_to_use.pdf">こちら</a>をご覧ください！
+                    <h3>アプリの機能と利点</h3>
+                    <ul>
+                        <li>翻訳機能</li>
+                        <ul>
+                            <li>高齢者が介護者に求めていることの大筋を理解できる</li>
+                            <li>外国人労働者の主要な母国語に翻訳できる</li>    
+                        </ul><br>
+                        <li>ナースコール機能</li>
+                        <ul>
+                            <li>介護者は高齢者の要望・緊急性を見て対応順番を決められる</li>
+                            <li>高齢者が口頭では伝えにくい要望を介護者に伝えられる&nbsp;(&nbsp;おむつ替えなど&nbsp;)</li>
+                        </ul>
+                    </ul>
+                    <h3>改善点</h3>
+                    <ul>
+                        <li>ナースコール機能の管理者ページの多言語対応</li>
+                        <li>モバイルアプリの作成</li>
+                    </ul> 
+                </div>
+                <h2 class="subTitle">2. カウントXゲーム</h2>
+                <div class="underTitle">
+                    <h3>アプリの概要</h3>
+                    暇つぶしゲームです。ローカル環境で作成済み。アプリの使用方法は、<a href="how_to_use_2.pdf">こちら</a>をご覧ください！
+                    <h3>改善点</h3>
+                    <ul>
+                        <li>セキュリティ対策</li>
+                        <li>ランキング機能の追加&nbsp;(&nbsp;タイムアタック, 連勝回数, etc&nbsp;)</li>
+                    </ul> 
+                </div>
+                <h2 class="subTitle">3. 競馬AI Webアプリケーション</h2>
+                <div class="underTitle">
+                    <h3>アプリの概要</h3>
+                    ユーザーの好みに合わせた競馬の着順予想ができるアプリです。現在作成中。アプリの使用方法は、<a href="how_to_use_3.pdf">こちら</a>をご覧ください！
+                    <h3>解析方法</h3>
+                        <ul>
+                            <li>netkeiba.comから過去のレース情報をWebスクレイピング</li>
+                            <li>各レースにおいてオッズ, 馬番, 馬体重, 脚質が「着順」と関係するかを重回帰分析で確認</li>
+                            <li>レースごとに着順予想計算式を算出し、データベースに格納</li>
+                            <li>ユーザの重要視ポイントと計算式を組み合わせて、着順予想</li>
+                        </ul>
+                    <h3>改善点</h3>
+                    <ul>
+                        <li>レース情報の追加&nbsp;(&nbsp;場所, 距離&nbsp;)</li>
+                        <li>重要視ポイントの追加&nbsp;(&nbsp;血統, ジョッキー, レーティング, etc&nbsp;)</li>
+                        <li>馬体チェック機能</li>
+                        <li>Tensorflow, MoveNetを利用した動作解析機能</li>
+                    </ul>
+                </div>
+            </main>
+            <footer>
+                DAIKI'S PORTFOLIO
+            </footer>
+        </article>
+        <script type="text/javascript" src="../PORTFOLIO.js"></script>
+    </body>
+</html>

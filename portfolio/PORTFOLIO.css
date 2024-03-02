@@ -1,0 +1,816 @@
+@media screen and (min-width: 2001px) {
+	/* 2001px以上に適用されるCSS（とても大きいディスプレイ用） */
+    html {
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+    
+    *, 
+    *:before, 
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .background {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: repeat;
+        background-image: url(album/horses_gray.jpg);
+        min-height: 100vh;
+    }
+    
+    body {
+        background-color: gainsboro;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    
+    .nav {
+        width: 1500px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+    }
+    
+    /* Navigation */
+    
+    .nav {
+        font-family: Georgia, Arial, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .nav-items {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        display: block;
+        position: relative;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        color: chocolate;
+        font-weight: bold;
+    }
+    
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: rgba(0,0,0,0.2);
+        opacity: 0;
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-link:hover::before,
+    .nav-link:hover::before {
+        opacity: 1;
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px);
+    }
+    
+    /* body */
+    
+    main {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    #homeTitle {
+        color: chocolate;
+        font-size: 5.8rem;
+        font-family: Georgia, Arial, sans-serif;
+        text-align: center;
+        margin-top: 580px;
+    }
+    
+    .mainTitle {
+        color: chocolate;
+        font-size: 2.7rem;
+        font-family: Georgia, Arial, sans-serif;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    
+    .subTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .keyTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .underTitle {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    .item {
+        padding: 30px;
+        width: 33%;
+        background-color: gainsboro;
+    }
+
+    footer {
+        margin-top: 60px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: gainsboro;
+        background-color: chocolate;
+    }
+}
+@media screen and (max-width: 2000px) {
+	/* 2000px以下に適用されるCSS（ディスプレイ用） */
+    html {
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+    
+    *, 
+    *:before, 
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .background {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: repeat;
+        background-image: url(album/horses_gray.jpg);
+        min-height: 100vh;
+    }
+    
+    body {
+        background-color: gainsboro;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    
+    .nav {
+        width: 1500px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+    }
+    
+    /* Navigation */
+    
+    .nav {
+        font-family: Georgia, Arial, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .nav-items {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        display: block;
+        position: relative;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        color: chocolate;
+        font-weight: bold;
+    }
+    
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: rgba(0,0,0,0.2);
+        opacity: 0;
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-link:hover::before,
+    .nav-link:hover::before {
+        opacity: 1;
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px);
+    }
+    
+    /* body */
+    
+    main {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    #homeTitle {
+        color: chocolate;
+        font-size: 5.5rem;
+        font-family: Georgia, Arial, sans-serif;
+        text-align: center;
+        margin-top: 450px;
+    }
+    
+    .mainTitle {
+        color: chocolate;
+        font-size: 2.7rem;
+        font-family: Georgia, Arial, sans-serif;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    
+    .subTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .keyTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .underTitle {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    .item {
+        padding: 30px;
+        width: 33%;
+        background-color: gainsboro;
+    }
+
+    footer {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: gainsboro;
+        background-color: chocolate;
+    }
+}
+@media screen and (max-width: 1400px) {
+	/* 1400px以下に適用されるCSS（PC用） */
+    html {
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+    
+    *, 
+    *:before, 
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .background {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: repeat;
+        background-image: url(album/horses_gray.jpg);
+        min-height: 100vh;
+    }
+    
+    body {
+        background-color: gainsboro;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    
+    .nav {
+        width: 750px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+    }
+    
+    /* Navigation */
+    
+    .nav {
+        font-family: Georgia, Arial, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .nav-items {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        display: block;
+        position: relative;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        color: chocolate;
+        font-weight: bold;
+    }
+    
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: rgba(0,0,0,0.2);
+        opacity: 0;
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-link:hover::before,
+    .nav-link:hover::before {
+        opacity: 1;
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px);
+    }
+    
+    /* body */
+    
+    main {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    #homeTitle {
+        color: chocolate;
+        font-size: 3.7rem;
+        font-family: Georgia, Arial, sans-serif;
+        text-align: center;
+        margin-top: 270px;
+    }
+    
+    .mainTitle {
+        color: chocolate;
+        font-size: 2.7rem;
+        font-family: Georgia, Arial, sans-serif;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    
+    .subTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .keyTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .underTitle {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    .item {
+        padding: 30px;
+        width: 33%;
+        background-color: gainsboro;
+    }
+
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: gainsboro;
+        background-color: chocolate;
+    }
+}
+@media screen and (max-width: 959px) {
+	/* 959px以下に適用されるCSS（タブレット用） */
+    html {
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+    
+    *, 
+    *:before, 
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .background {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: repeat;
+        background-image: url(album/horses_gray.jpg);
+        min-height: 100vh;
+    }
+    
+    body {
+        background-color: gainsboro;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    
+    .nav {
+        width: 750px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+    }
+    
+    /* Navigation */
+    
+    .nav {
+        font-family: Georgia, Arial, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .nav-items {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        margin-right: 25px;
+    }
+    
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        display: block;
+        position: relative;
+        font-size: 2rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        color: chocolate;
+        font-weight: bold;
+    }
+    
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: rgba(0,0,0,0.2);
+        opacity: 0;
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-link:hover::before,
+    .nav-link:hover::before {
+        opacity: 1;
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px);
+    }
+    
+    /* body */
+    
+    main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    #homeTitle {
+        color: chocolate;
+        font-size: 4.0rem;
+        font-family: Georgia, Arial, sans-serif;
+        text-align: center;
+        margin-top: 450px;
+    }
+    
+    .mainTitle {
+        color: chocolate;
+        font-size: 2.4rem;
+        font-family: Georgia, Arial, sans-serif;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    
+    .subTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    
+    .keyTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .underTitle {
+        font-size: 0.95rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    .item {
+        padding: 30px;
+        width: 33%;
+        background-color: gainsboro;
+    }
+
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: gainsboro;
+        background-color: chocolate;
+    }
+}
+@media screen and (max-width: 519px) {
+	/* 519px以下に適用されるCSS（スマホ用） */
+    html {
+        box-sizing: border-box;
+        font-size: 10px;
+    }
+    
+    *, 
+    *:before, 
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .background {
+        background-size: cover;
+        background-position: center top;
+        background-repeat: repeat;
+        background-image: url(album/horses_gray.jpg);
+        min-height: 100vh;
+    }
+    
+    body {
+        background-color: gainsboro;
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    
+    .nav {
+        width: 400px;
+        margin: 100px auto 0 auto;
+        text-align: center;
+    }
+    
+    /* Navigation */
+    
+    .nav {
+        font-family: Georgia, Arial, sans-serif;
+        font-size: 1.5rem;
+    }
+    
+    .nav-items {
+        padding: 0;
+        list-style: none;
+    }
+    
+    .nav-item {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        display: block;
+        position: relative;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        outline: none;
+    }
+    
+    .nav-link,
+    .nav-link:link, 
+    .nav-link:visited, 
+    .nav-link:active {
+        color: chocolate;
+        font-weight: bold;
+    }
+    
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: rgba(0,0,0,0.2);
+        opacity: 0;
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-link:hover::before,
+    .nav-link:hover::before {
+        opacity: 1;
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px);
+    }
+    
+    /* body */
+    
+    main {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    
+    #homeTitle {
+        color: chocolate;
+        font-size: 3.7rem;
+        font-family: Georgia, Arial, sans-serif;
+        text-align: center;
+        margin-top: 200px;
+    }
+    
+    .mainTitle {
+        color: chocolate;
+        font-size: 2.4rem;
+        font-family: Georgia, Arial, sans-serif;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .subTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .keyTitle {
+        color: chocolate;
+        font-size: 1.6rem;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    .underTitle {
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+      
+    .item {
+        padding: 30px;
+        width: 33%;
+        background-color: gainsboro;
+    }
+
+    .freePhoto {
+        width: 320px;
+        height: 210px;
+    }
+
+    footer {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: gainsboro;
+        background-color: chocolate;
+    }
+}
+
